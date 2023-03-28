@@ -221,8 +221,9 @@ nav button {
 
 /* ================= GENERAL POST STYLES  ================= */
 .post__thumbnail {
-  border-radius: var(--card-border-radius-5) var(--card-border-radius-4);
+  border-radius: var(--card-border-radius-4) var(--card-border-radius-2);
   border: 1rem solid var(--color-grey-900);
+  /* border: 4rem solid red; */
   margin-bottom: 1.6rem;
   overflow: hidden;
 }
