@@ -42,7 +42,7 @@
         </div>
         <button class="btn" type="submit">Sign In</button>
         <small>
-          Don't have an account? <a href="signin.html">Sign In</a>
+          Don't have an account? <a href="signin.php">Sign In</a>
         </small>
       </div>
     </section>
