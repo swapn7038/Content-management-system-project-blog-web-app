@@ -1,6 +1,8 @@
 <?php
 
-define('ROOT_URL', 'http://localhost/Blog-cms');
+// define('ROOT_URL', 'http://localhost/Blog-cms');
+
+
 // above one was original
 
 // define('ROOT_URL', 'http://localhost');
