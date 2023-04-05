@@ -6,11 +6,16 @@
     <!-- ================ Featured start  ================ -->
 
     <section class="featured">
+
+
+
+    <!--  -->
       <div class="container featured__container">
         <div class="post__thumbnail">
           <img src="./images/tropical-violet-senset-1639626.jpg" />
         </div>
 
+        <!--  -->
         <div class="post__info">
           <a href="./category-posts.html" class="category__button">Wild life</a>
           <h2 class="post__title">
@@ -19,7 +24,6 @@
               Minima.</a
             >
           </h2>
-
           <p class="post__body">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui earum
             deserunt saepe quisquam, maxime possimus animi tempore architecto
@@ -27,21 +31,28 @@
             exercitationem, expedita cum. Quis, veritatis!
           </p>
 
+
+          <!--  -->
           <div class="post__author">
             <div class="post__author-avatar">
               <img src="./images/tropical-violet-senset-1639626.jpg" />
-            </div>
+           </div>
 
+           <!--  -->
             <div class="post__author-info">
               <h5>By: Jane Doe</h5>
               <small>June 10, 2022 - 07:23</small>
             </div>
+
           </div>
         </div>
       </div>
     </section>
 
     <!-- ================ END OF FEATURED  ================ -->
+
+        <!-- ================ START OF POSTS  ================ -->
+
 
     <section class="posts">
       <div class="container posts__container">

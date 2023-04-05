@@ -59,13 +59,11 @@ body {
   /* margin-inline: auto; */
   /* both are same */
   margin: 0 auto;
-  /* border: 2px solid red; */
 }
 
 section {
   margin-top: 3rem;
   width: 100vw;
-  /* border: 3px solid red; */
 }
 
 h1,
