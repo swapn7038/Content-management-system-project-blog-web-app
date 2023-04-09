@@ -25,14 +25,14 @@ require 'config/database.php';
   <body>
     <nav>
       <div class="container nav__container">
-        <a href="<?= ROOT_URL ?> " class="nav__logo">Swapnil</a>
+        <a href="../index.php" class="nav__logo">Swapnil</a>
         <!-- this ROOT_URL will locate to the localhost -> index page directly -->
         <ul class="nav__items">
-          <li><a href="<?=ROOT_URL?>blog.php">Blog</a></li>
-          <li><a href="<?=ROOT_URL?>about.php">About</a></li>
-          <li><a href="<?=ROOT_URL?>services.php">Services</a></li>
-          <li><a href="<?=ROOT_URL?>contact.php">Contact</a></li>
-          <!-- <li><a href=<?=ROOT_URL?>"signin.html">Sign In</a></li> -->
+          <li><a href="../blog.php">Blog</a></li>
+          <li><a href="../about.php">About</a></li>
+          <li><a href="../services.php">Services</a></li>
+          <li><a href="../contact.php">Contact</a></li>
+          <!-- <li><a href="signin.html">Sign In</a></li> -->
           <li class="nav__profile">
             <div class="avatar">
               <img
@@ -40,8 +40,8 @@ require 'config/database.php';
               />
             </div>
             <ul>
-              <li><a href="<?=ROOT_URL?>admin/index.php">Dashboard</a></li>
-              <li><a href="<?=ROOT_URL?>signout.php">Logout</a></li>
+              <li><a href="admin/index.php">Dashboard</a></li>
+              <li><a href="signout.php">Logout</a></li>
             </ul>
           </li>
         </ul>

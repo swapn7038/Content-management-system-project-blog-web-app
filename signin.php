@@ -18,21 +18,21 @@
   <body>
     <section class="form__section">
       <div class="container form__section-container">
-        <h2>Sign Up</h2>
+        <h2>Sign In</h2>
         <div class="alert__message success">
           <p>This is an error message</p>
         </div>
         <form action="">
           <input type="text" placeholder="first username or email" />
           <input type="password" placeholder="Password" />
-          <div class="form__control">
+          <!-- <div class="form__control">
             <label for="avatar">
               <input type="file" id="avatar" />
             </label>
-          </div>
+          </div> -->
           <button class="btn" type="submit">Sign In</button>
           <small>
-            Don't have an account? <a href="signin.html">Sign In</a>
+            Don't have an account? <a href="signup.php">Sign Up</a>
           </small>
         </form>
       </div>
