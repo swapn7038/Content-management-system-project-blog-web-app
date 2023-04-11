@@ -1,6 +1,4 @@
 <?php
-
-session_start();
 require 'config/constants.php';
 
 // get back form data if there was a registration error
@@ -10,7 +8,6 @@ $username = $_SESSION['signup-data']['username'] ?? null;
 $email = $_SESSION['signup-data']['email'] ?? null;
 $createpassword = $_SESSION['signup-data']['createpassword'] ?? null;
 $confirmpassword = $_SESSION['signup-data']['confirmpassword'] ?? null;
-// $ = $_SESSION['signup-data'][''];
 
 // delete signup data session
 unset($_SESSION['signup-data']);

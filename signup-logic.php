@@ -1,9 +1,5 @@
 <?php
 
-
-
-session_start();
-
 require 'config/database.php';
 // we require database files here
 // get signup form data after clicking on the submit/signup button
@@ -87,7 +83,7 @@ if(isset($_POST['submit'])){
     // var_dump($avatar);
 
     // redirect back to sign up page if there is any problem
-    if($_SESSION['signup']) {
+    if(isset($_SESSION['signup'])) {
         // pass form data back to signup page
         $_SESSION['signup-data'] = $_POST;
         header('location:signup.php');
@@ -96,10 +92,12 @@ if(isset($_POST['submit'])){
         // insert new user into users table
         $insert_user_query = "INSERT INTO users (firstname, lastname, username, email, password, avatar, is_admin) VALUES('$firstname', '$lastname', '$username', '$email', '$hashed_password', '$avatar_name', 0)";
 
+        $insert_user_result = mysqli_query($connection, $insert_user_query);
+
         if(!mysqli_errno($connection)) {
             // redirect to loginpage with success message
             $_SESSION['signup-success'] = "Registration successful. Please log in";
-            header['Location:signup.php'];
+            header('Location:signin.php');
             die();
         }
     }
