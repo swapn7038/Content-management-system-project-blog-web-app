@@ -68,7 +68,7 @@ if(isset($_POST['submit'])){
                 if(in_array($extension, $allowed_files)) {
                     // make sure image is not to large (1MB+)
                     if($avatar['size'] < 1000000) {
-                        // upload avatar
+                        // upload avatar into images location
                         move_uploaded_file($avatar_tmp_name, $avatar_destination_path);
                     } else {
                         $_SESSION['signup'] = 'File size is too big. Should be less than 1MB';
@@ -95,7 +95,7 @@ if(isset($_POST['submit'])){
         $insert_user_result = mysqli_query($connection, $insert_user_query);
 
         if(!mysqli_errno($connection)) {
-            // redirect to loginpage with success message
+            // redirect to login-page with success message
             $_SESSION['signup-success'] = "Registration successful. Please log in";
             header('Location:signin.php');
             die();

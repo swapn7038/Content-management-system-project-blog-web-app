@@ -32,7 +32,8 @@ require 'config/database.php';
           <li><a href="../about.php">About</a></li>
           <li><a href="../services.php">Services</a></li>
           <li><a href="../contact.php">Contact</a></li>
-          <!-- <li><a href="signin.html">Sign In</a></li> -->
+          <?php if(isset($_SESSION['is-admin'])): ?>
+          <li><a href="signin.php">Sign In</a></li>
           <li class="nav__profile">
             <div class="avatar">
               <img
@@ -54,5 +55,3 @@ require 'config/database.php';
         </button>
       </div>
     </nav>
-
-    <!-- ================ End of Nav  ================ -->

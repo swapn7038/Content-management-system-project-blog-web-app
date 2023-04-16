@@ -9,11 +9,10 @@ if(isset($_POST['submit'])) {
     $password = filter_var($_POST['password'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
     if(!$username_email){
-        $_SESSION['signin'] = "Username or Email required";
+        $_SESSION['signin'] = "Username or Email Required";
     } elseif(!$password){
         $_SESSION['signin'] = "Password Required";
     } else {
-
         // fetch user from database
         $fetch_user_query = "SELECT * from users where username = 'username_email' OR email = 'username_email'";
         $fetch_user_result = mysqli_query($connection, $fetch_user_query);
@@ -22,8 +21,10 @@ if(isset($_POST['submit'])) {
             // convert the record into assos array
             $user_record = mysqli_fetch_assoc($fetch_user_result);
             $db_password = $user_record['password'];
+
             // compare form password with database password
             if(password_verify($password, $db_password)) {
+                
                 // set session for access control
                 $_SESSION['user-id'] = $user_record['id'];
 
@@ -43,7 +44,7 @@ if(isset($_POST['submit'])) {
 
     // if any problem, redirect back to signin page with login data
     // ************************
-    if(isset($_SESSION('signin'))) {
+    if(isset($_SESSION['signin'])) {
         $_SESSION['signin-data'] = $_POST;
         header('location:signin.php');
         die();

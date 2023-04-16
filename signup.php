@@ -35,6 +35,7 @@ unset($_SESSION['signup-data']);
     <section class="form__section">
       <div class="container form__section-container">
         <h2>Sign Up</h2>
+
        <?php if(isset($_SESSION['signup'])) : ?>
          <div class="alert__message error">
             <p>
@@ -47,7 +48,7 @@ unset($_SESSION['signup-data']);
          </div>
        <?php  endif  ?>
 
-        ?>
+        <!-- ?> -->
         <form action="signup-logic.php" enctype="multipart/form-data" method="post">
           <input type="text" name="firstname" value="<?= $firstname ?>" placeholder="first name" />
           <input type="text" name="lastname" value="<?= $lastname ?>" placeholder="last name" />
