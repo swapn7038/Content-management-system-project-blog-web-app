@@ -5,7 +5,7 @@
 session_start();
 
 define('DB_HOST','localhost');
-define('DB_USER', 'Swapnil');
-define('DB_PASS', 'Swapy@123');
+define('DB_USER', 'egator');
+define('DB_PASS', 'admin1234');
 define('DB_NAME', 'blog');
 
