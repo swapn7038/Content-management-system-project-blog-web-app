@@ -1,6 +1,6 @@
 <?php
 
-// define('ROOT_URL', 'https://localhost/Blog-cms/');
+define('ROOT_URL', 'https://localhost/Blog-cms/');
 
 session_start();
 

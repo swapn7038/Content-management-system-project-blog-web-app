@@ -35,8 +35,9 @@ unset($_SESSION['signin-data']);
              
           <div class="alert__message success">
             <p>
-              <?=   $_SESSION['signup-success'];
-                    unset($_SESSION['signup-success']);
+              <?php   
+              $_SESSION['signup-success'];
+              unset($_SESSION['signup-success']);
               ?>
             </p>
           </div>
@@ -48,7 +49,7 @@ unset($_SESSION['signin-data']);
             <p>
               <?php
               $_SESSION['signin'];
-                    unset($_SESSION['signin']);
+              unset($_SESSION['signin']);
               ?>
             </p>
           </div>
@@ -57,7 +58,7 @@ unset($_SESSION['signin-data']);
 
 
         <form action="signin-login.php"  method="post">
-          <input type="text" name="username_email" value="<?= $username_email ?>" placeholder="first username or email" />
+          <input type="text" name="username_email" value="<?= $username_email ?>" placeholder="First username or email" />
           <input type="password" name="password" value="<?= $password ?>" placeholder="Password" />
           <button class="btn" name="submit" type="submit">Sign In</button>
           <small>

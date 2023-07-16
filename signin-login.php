@@ -14,7 +14,7 @@ if(isset($_POST['submit'])) {
         $_SESSION['signin'] = "Password Required";
     } else {
         // fetch user from database
-        $fetch_user_query = "SELECT * from users where username = 'username_email' OR email = 'username_email'";
+        $fetch_user_query = "SELECT * from users where username = '$username_email' OR email = '$username_email'";
         $fetch_user_result = mysqli_query($connection, $fetch_user_query);
 
         if(mysqli_num_rows($fetch_user_result) == 1) {
@@ -27,6 +27,7 @@ if(isset($_POST['submit'])) {
                 
                 // set session for access control
                 $_SESSION['user-id'] = $user_record['id'];
+                // getting id column from that record
 
                 // set session if user is an admin
                 if($user_record['is_admin'] == 1) {
@@ -50,5 +51,5 @@ if(isset($_POST['submit'])) {
         die();
     }
 } else {
-    header('Location:signin.php');
+    header('location:signin.php');
 }
