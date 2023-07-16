@@ -49,7 +49,7 @@ unset($_SESSION['signup-data']);
        <?php  endif  ?>
 
         <!-- ?> -->
-        <form action="signup-logic.php" enctype="multipart/form-data" method="post">
+        <form action="signup-logic.php" enctype="multipart/form-data" method="POST">
           <input type="text" name="firstname" value="<?= $firstname ?>" placeholder="first name" />
           <input type="text" name="lastname" value="<?= $lastname ?>" placeholder="last name" />
           <input type="text" name="username" value="<?= $username ?>" placeholder="username" />
