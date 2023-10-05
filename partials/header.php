@@ -2,6 +2,13 @@
 
 require 'config/database.php';
 
+if(isset($_SESSION['user-id'])) {
+  $id = filter_var($_SESSION['user-id'], FILTER_SANITIZE_NUMBER_INT);
+  $query = 'SELECT avatar FROM users WHERE id=1';
+  $result = mysqli_query($connection, $query);
+  $avatar = mysqli_fetch_assoc($result);
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -32,11 +39,12 @@ require 'config/database.php';
           <li><a href="contact.php">Contact</a></li>
           <!--  -->
           <?php if(isset($_SESSION['user-id'])): ?>
+            <!-- if user-d is set that means user is logged-in  -->
 
                <li class="nav__profile">
                <div class="avatar">
                  <img
-                   src="#"
+                   src="<?php ROOT_URL . 'images/' . avatar['avatar'] ?>"
                  />
                </div>
                <ul>
@@ -44,9 +52,12 @@ require 'config/database.php';
                  <li><a href="signout.php">Logout</a></li>
                </ul>
                </li>
+               
                <?php else : ?>
+
                <li><a href="signin.php">Sign In</a></li>
-               <?php endif; ?>
+
+               <?php endif ?>
         </ul>
 
         <button class="" id="open__nav-btn">

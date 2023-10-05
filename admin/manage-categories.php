@@ -15,14 +15,14 @@
           <ul>
             <!-- 1 -->
             <li>
-              <a href="add-post.html">
+              <a href="add-post.php">
                 <i>I</i>
                 <h5>Add Post</h5>
               </a>
             </li>
             <!-- 2 -->
             <li>
-              <a href="dashboard.html">
+              <a href="index.php">
                 <i>I</i>
                 <h5>Manage Post</h5>
               </a>
@@ -31,28 +31,28 @@
             <?php if(isset($_SESSION['user_is_admin'])): ?>
             <!-- 3 -->
             <li>
-              <a href="add-user.html">
+              <a href="add-user.php">
                 <i>I</i>
                 <h5>Add User</h5>
               </a>
             </li>
             <!-- 4 -->
             <li>
-              <a href="manage-users.html">
+              <a href="manage-users.php">
                 <i>I</i>
                 <h5>Manage Users</h5>
               </a>
             </li>
             <!-- 5 -->
             <li>
-              <a href="add-category.html">
+              <a href="add-category.php">
                 <i>I</i>
                 <h5>Add Category</h5>
               </a>
             </li>
             <!-- 6 -->
             <li>
-              <a href="manage-categories.html" class="active">
+              <a href="manage-categories.php" class="active">
                 <i>I</i>
                 <h5>Manage Category</h5>
               </a>
@@ -76,36 +76,36 @@
             <tbody>
               <tr>
                 <td>Travel</td>
-                <td><a href="edit-category.html" class="btn sm">Edit</a></td>
+                <td><a href="edit-category.php" class="btn sm">Edit</a></td>
                 <td>
-                  <a href="delete-category.html" class="btn sm danger"
+                  <a href="delete-category.php" class="btn sm danger"
                     >Delete</a
                   >
                 </td>
               </tr>
               <tr>
                 <td>Wild Life</td>
-                <td><a href="edit-category.html" class="btn sm">Edit</a></td>
+                <td><a href="edit-category.php" class="btn sm">Edit</a></td>
                 <td>
-                  <a href="delete-category.html" class="btn sm danger"
+                  <a href="delete-category.php" class="btn sm danger"
                     >Delete</a
                   >
                 </td>
               </tr>
               <tr>
                 <td>Art</td>
-                <td><a href="edit-category.html" class="btn sm">Edit</a></td>
+                <td><a href="edit-category.php" class="btn sm">Edit</a></td>
                 <td>
-                  <a href="delete-category.html" class="btn sm danger"
+                  <a href="delete-category.php" class="btn sm danger"
                     >Delete</a
                   >
                 </td>
               </tr>
               <tr>
                 <td>Games</td>
-                <td><a href="edit-category.html" class="btn sm">Edit</a></td>
+                <td><a href="edit-category.php" class="btn sm">Edit</a></td>
                 <td>
-                  <a href="delete-category.html" class="btn sm danger"
+                  <a href="delete-category.php" class="btn sm danger"
                     >Delete</a
                   >
                 </td>

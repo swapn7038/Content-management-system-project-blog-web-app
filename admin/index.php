@@ -21,7 +21,7 @@
             </li>
             <!-- 2 -->
             <li>
-              <a href="dashboard.php" class="active">
+              <a href="index.php" class="active">
                 <i>I</i>
                 <h5>Manage Post</h5>
               </a>
