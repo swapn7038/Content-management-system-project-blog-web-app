@@ -24,9 +24,9 @@ if(isset($_POST['submit'])){
     }  elseif(!$email){
         $_SESSION['add-user'] = "Please enter Valid Email";
     }
-        elseif(!$is_admin){
-            $_SESSION['add-user'] = "Please select user role";
-        }
+        // elseif(!$is_admin){
+        //     $_SESSION['add-user'] = "Please select user role";
+        // }
     elseif(strlen($createpassword) < 8 || strlen($confirmpassword) < 8){
         $_SESSION['add-user'] = "Password should be 8+ characters";
 
