@@ -26,6 +26,8 @@
                 <h5>Manage Post</h5>
               </a>
             </li>
+
+            <!-- ========================== -->
             <?php if(isset($_SESSION['user_is_admin'])): ?>
             <!-- 3 -->
             <li>

@@ -44,7 +44,7 @@ if(isset($_SESSION['user-id'])) {
                <li class="nav__profile">
                <div class="avatar">
                  <img
-                   src="<?php ROOT_URL . 'images/' . avatar['avatar'] ?>"
+                   src="<?php   '/images/' . $avatar['avatar'] ?>"
                  />
                </div>
                <ul>

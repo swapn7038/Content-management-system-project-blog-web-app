@@ -2,7 +2,20 @@
 require 'config/database.php';
 // we require database.php here
 
+
+if(isset($_SESSION['user-id'])) {
+  $id = filter_var($_SESSION['user-id'], FILTER_SANITIZE_NUMBER_INT);
+  $query = 'SELECT avatar FROM users WHERE id=1';
+  $result = mysqli_query($connection, $query);
+  $avatar = mysqli_fetch_assoc($result);
+}
+
 // check 
+
+if(!isset($_SESSION['user-id'])){
+  header('location:' . '../signin.php');
+  die();
+}
 
 ?>
 <!DOCTYPE html>
@@ -37,9 +50,11 @@ require 'config/database.php';
 
             <li class="nav__profile">
             <div class="avatar">
-              <img
+              <!-- <img
                 src="https://unsplash.com/photos/7BbHyuAf1sg"
-              />
+              /> -->
+
+              <img src="../images" <?php $avatar["avatar"]  ?> alt="">
             </div>
             <ul>
               <li><a href="admin/index.php">Dashboard</a></li>

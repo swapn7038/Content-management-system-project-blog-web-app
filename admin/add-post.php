@@ -40,10 +40,10 @@
             <input type="file" id="avatar" />
           </label>
         </div>
-        <button class="btn" type="submit">Sign In</button>
-        <small>
+        <!-- <button class="btn" type="submit">Sign In</button> -->
+        <!-- <small>
           Don't have an account? <a href="signin.php">Sign In</a>
-        </small>
+        </small> -->
       </div>
     </section>
   </body>

@@ -82,8 +82,6 @@ unset($_SESSION['signup-data']);
 // we had enctype="multipart/form-data" attribute because we are going to upload files
 
 
-
-// 2:40:00
 ?>
 
 
