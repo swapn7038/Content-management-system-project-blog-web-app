@@ -76,7 +76,7 @@ if(isset($_POST['submit'])){
         $insert_user_result = mysqli_query($connection, $insert_user_query);
 
         if(!mysqli_errno($connection)) {
-            $_SESSION['add-user-success'] = "Registration successful. Please log in";
+            $_SESSION['add-user-success'] = "New user $firstname $lastname added successfully.";
             header('Location:manage-users.php');
             die();
         }
